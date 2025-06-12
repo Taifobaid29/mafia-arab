@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>مافيا العرب</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="lobby">
+        <h2>🎭 مافيا العرب</h2>
+        <input type="text" id="username" placeholder="ادخل اسمك">
+        <button onclick="joinGame()">انضم</button>
+    </div>
+    <div id="game" style="display:none;">
+        <h3 id="role">دورك: ...</h3>
+        <div id="chat"></div>
+        <input type="text" id="msgInput" placeholder="اكتب رسالة">
+        <button onclick="sendMsg()">إرسال</button>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
